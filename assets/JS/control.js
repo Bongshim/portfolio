@@ -5,7 +5,7 @@ $(document).ready(function($) {
     if (ww < 568) {
       $('.skills__content').addClass('skills__open');
       skillsHeader.forEach((h) => h.addEventListener("click", toggleSkills));
-    } else if (ww >= 601) {
+    } else if (ww >= 568) {
       $('.skills__content').removeClass('skills__close');
       $('.skills__arrow').hide();
     };
