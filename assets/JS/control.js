@@ -24,6 +24,7 @@ const navMenu = document.getElementsByClassName("mb_nav"),
 // When we click on the navToggle, we add the left menu class
 if (navToggle) {
   navToggle[0].addEventListener("click", () => {
+    console.log("clicked")
     navMenu[0].classList.add("left");
   });
 }
