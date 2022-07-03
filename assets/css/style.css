@@ -183,10 +183,21 @@ img {
   left: 0;
 }
 .nav__logo,
-.nav__toggle,
-.socials {
+.nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
+}
+.socials{
+  font-weight: var(--font-medium);
+}
+.nav__item .nav__link,
+.sosIcon {
+  color: #fff;
+  
+}
+
+.sosIcon{
+  width: 50px;
 }
 
 .sosIcon {
