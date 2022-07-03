@@ -3,7 +3,7 @@ $(document).ready(function($) {
   var alterClass = function() {
     var ww = document.body.clientWidth;
     if (ww < 568) {
-      $('.skills__content').addClass('skills__open');
+      
       skillsHeader.forEach((h) => h.addEventListener("click", toggleSkills));
     } else if (ww >= 568) {
       $('.skills__content').removeClass('skills__close');
