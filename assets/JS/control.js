@@ -1,3 +1,22 @@
+$(document).ready(function($) {
+  
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 568) {
+      $('.skills__content').addClass('skills__open');
+      skillsHeader.forEach((h) => h.addEventListener("click", toggleSkills));
+    } else if (ww >= 601) {
+      $('.skills__content').removeClass('skills__close');
+      $('.skills__arrow').hide();
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
+
 const navMenu = document.getElementsByClassName("mb_nav"),
   navToggle = document.getElementsByClassName("mb-menu"),
   navClose = document.getElementsByClassName("uil-times"),
@@ -39,7 +58,7 @@ function toggleSkills() {
   }
 }
 
-skillsHeader.forEach((h) => h.addEventListener("click", toggleSkills));
+
 
 
 // Portfolio slider 
@@ -54,5 +73,7 @@ let swiper = new Swiper(".portfolio__container", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  
+  
 
 });
