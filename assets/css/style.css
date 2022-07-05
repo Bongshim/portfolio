@@ -367,6 +367,10 @@ img {
   transition: 0.3s;
 }
 
+.cont-button:hover .button__icon{
+  transform: translateX(0.25rem);
+}
+
 .button--flex {
   display: inline-flex;
   align-items: center;
