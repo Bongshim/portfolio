@@ -593,7 +593,7 @@ img {
   outline: none;
 }
 
-.portfolio__content{
+.p-pp{
   padding: 0.75rem;
   border-radius: .5rem;
   background-color: hsl(var(--hue-color), 30%, 10%);
