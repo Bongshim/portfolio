@@ -1,10 +1,5 @@
 # Personal Portfolio
 
-## Pages
-- Index page (brief introduction)
-- About page (objectives as a developer)
-- Projects page (list of projects and kills)
-- Contact page (contact form)
+![image](https://user-images.githubusercontent.com/44551557/177597118-36f5fae5-0c94-45b1-9e01-987167f9474a.png)
 
-*All pages must include links to social media platforms: LinkedIn, GitHub, Twitter.*
 
