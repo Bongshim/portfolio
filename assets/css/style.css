@@ -293,7 +293,10 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+  overflow: visible
+
 }
+
 
 .home__blob-img {
   width: 200px;
@@ -301,6 +304,21 @@ img {
 
 .home__data {
   grid-column: 1/3;
+}
+
+.path{
+  
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: dash 5s alternate infinite;
+}
+@keyframes dash {
+  /* from {
+    stroke-dashoffset: 822;
+  } */
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .home__title {
@@ -383,7 +401,11 @@ img {
 }
 
 .about__description {
-  text-align: center;
+  text-align: left;
+  margin-bottom: var(--mb-0-5);
+}
+
+.about__description:last-of-type{
   margin-bottom: var(--mb-2-5);
 }
 
@@ -784,7 +806,10 @@ footer {
     order: 1;
     justify-self: center;
   }
-  .about__container,
+  .about__container{
+    grid-template-columns: 1fr 2fr;
+  }
+  /* .about__container, */
   .skills__container,
   .portfolio__content,
   .contact__container,
@@ -893,7 +918,7 @@ footer {
   } */
 
   .about__container {
-    column-gap: 5rem;
+    column-gap: 2rem;
   }
   .about__img {
     width: 350px;
@@ -902,11 +927,11 @@ footer {
     text-align: initial;
   }
   .about__info {
-    justify-content: start;
+    justify-content: space-evenly;
     gap: 5rem;
   }
   .about__buttons {
-    justify-content: initial;
+    justify-content: center;
   }
 
   .portfolio__img {
